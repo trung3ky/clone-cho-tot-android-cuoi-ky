@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="5dp"
+        android:background="#636563"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/custom_background"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="13dp"
+                android:gravity="center_horizontal"
+                android:text="Choọn giới tính"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:background="#7CDFDCDC"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+            <TextView
+                android:textColor="#03A9F4"
+                android:id="@+id/textViewNam"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="50dp"
+                android:text="Nam"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:background="#7CDFDCDC"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+            <TextView
+                android:textColor="#03A9F4"
+                android:gravity="center"
+                android:id="@+id/textViewNu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Nữ"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewChonAnh" />
+            <TextView
+                android:background="#7CDFDCDC"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+            <TextView
+                android:textColor="#03A9F4"
+                android:gravity="center"
+                android:id="@+id/textViewKhac"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Khác"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewChonAnh" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/custom_background"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="#03A9F4"
+                android:gravity="center"
+                android:id="@+id/textViewHUYGT"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Hủy"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewChupAnh" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

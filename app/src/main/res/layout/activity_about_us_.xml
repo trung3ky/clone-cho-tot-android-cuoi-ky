@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AboutUs_Activity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#2196F3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="13dp"
+                android:weightSum="10">
+                <ImageButton
+                    android:id="@+id/backAboutUs"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_keyboard_backspace_black_24dp"
+                    android:scaleType="fitXY" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="về chúng tôi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="50dp"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/vku"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:padding="2dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="155dp"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginEnd="154dp"
+                    android:layout_marginRight="154dp"
+                    android:src="@drawable/anh_dai_dien" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:textColor="#000"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:text="Huỳnh Quang Trung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:text="26/09/2000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center_horizontal"
+            android:text="18IT1"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:text="RAO VẶT DỄ DÀNG - HOÀN TOÀN MIỄN PHÍ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="Đăng tin mua bán hoàn toàn dễ dàng với 1 bước đơn giản: Chụp hình đăng bán nhanh chóng trong vòng 30 giây.
+Tin đăng có hình giúp bạn dễ dàng mua bán hơn bao gi hết. Giúp bạn tiếp cận hàng triệu khách hàng mua sắm online tại Việt Nam.
+Chia sẻ tin đăng rao vặt trên các mạng xã hội khác, dễ dàng thu hút khách hàng, bán hàng thật hiệu quả."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text=" MUA SẮM DỄ DÀNG AN TOÀN TIỆN LỢI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="- Chợ Tốt Xe (Mua bán các loại xe máy, xe ô tô, xe tải, xe điện, xe đạp, xe điện ...)
+- Chợ Tốt Nhà (Mua bán nhà đất, Chung cư căn hộ, Thuê nhà trọ, phòng trọ, văn phòng, mặt bằng kinh doanh…)
+- Nội ngoại thất, Đồ gia dụng (Đồ dùng gia đình, tủ lạnh, máy giặt, máy lạnh, bàn ghế…)
+- Đồ điện tử (Điện thoại, máy tính bảng, lap top, máy ảnh, tivi, loa, amply…)
+- Thời trang, đồ dùng cá nhân (Quần áo Nam Nữ, giày dép, túi xách, phụ kiện thời trang)
+- Đồ cho mẹ và bé (Đồ dùng cho bé xe đẩy, Đồ chơi cho bé..)
+- Giải trí, Thể thao, Sở thích (Dụng cụ thể thao, đồ cổ sưu tầm, Sách, Đàn...)
+- Vật nuôi, thú cưng (Chó, Mèo, Gà, Cá cảnh…)
+- Đồ văn phòng, Công nông nghiệp (Máy in, máy chiếu...)
+- Tìm kiếm việc làm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

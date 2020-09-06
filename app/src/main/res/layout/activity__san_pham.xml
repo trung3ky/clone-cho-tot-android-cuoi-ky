@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Activity_SanPham">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#2196F3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="13dp"
+                android:weightSum="10">
+
+                <ImageButton
+                    android:id="@+id/imageButtonBack"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_keyboard_backspace_black_24dp"
+                    android:scaleType="fitXY" />
+
+                <EditText
+                    android:id="@+id/edittextTimKiemSP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="9"
+                    android:background="@drawable/custom_search"
+                    android:drawableLeft="@drawable/ic_search_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Nhập nội dung tìm kiếm"
+                    android:paddingStart="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/ic_place_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:text="Khu vực"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#000"
+                android:id="@+id/txtDiaChi"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:text="Đà Nẵng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerviewLoai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="411dp" />
+        <View
+            android:background="#B6C0C0C0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/TextViewThongBao"
+            android:paddingTop="60dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/find"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+            <TextView
+                android:textSize="22sp"
+                android:gravity="center"
+                android:text="Không tìm thấy kết quả"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerviewSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="411dp" />
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

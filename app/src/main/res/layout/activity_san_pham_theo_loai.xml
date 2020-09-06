@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SanPhamTheoLoaiActivity">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <androidx.appcompat.widget.Toolbar
+           android:layout_width="match_parent"
+           android:layout_height="?attr/actionBarSize"
+           android:background="#2196F3">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginRight="13dp"
+               android:weightSum="10">
+
+               <ImageButton
+                   android:id="@+id/imageButtonBackSanPhamTheoLoai"
+                   android:layout_width="10dp"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_weight="1"
+                   android:background="@drawable/ic_keyboard_backspace_black_24dp"
+                   android:scaleType="fitXY" />
+
+               <EditText
+                   android:id="@+id/edittextTimKiemSPTheoLoai"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="8dp"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginBottom="8dp"
+                   android:layout_weight="9"
+                   android:background="@drawable/custom_search"
+                   android:drawableLeft="@drawable/ic_search_black_24dp"
+                   android:drawablePadding="10dp"
+                   android:hint="Nhập nội dung tìm kiếm"
+                   android:paddingStart="10dp"
+                   android:paddingRight="10dp"
+                   android:textSize="17sp" />
+
+
+           </LinearLayout>
+       </androidx.appcompat.widget.Toolbar>
+       <LinearLayout
+           android:layout_margin="10dp"
+           android:layout_gravity="center_vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:src="@drawable/ic_place_black_24dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:layout_marginLeft="10dp"
+               android:layout_width="wrap_content"
+               android:text="Khu vực"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:textColor="#000"
+               android:id="@+id/txtDiaChiSPtheoLoai"
+               android:textSize="18sp"
+               android:layout_marginLeft="10dp"
+               android:gravity="center_vertical"
+               android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+               android:text="Đà Nẵng"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/LocDanhMuc"
+               android:layout_marginBottom="10dp"
+               android:textColor="#000"
+               android:paddingTop="10dp"
+               android:paddingBottom="10dp"
+               android:paddingRight="10dp"
+               android:paddingLeft="10dp"
+               android:background="@drawable/custom_loai"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="10dp"
+               android:text="Danh Mục"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:id="@+id/LocLoaiDanhMuc"
+               android:layout_marginBottom="10dp"
+               android:textColor="#000"
+               android:paddingTop="10dp"
+               android:paddingBottom="10dp"
+               android:paddingRight="10dp"
+               android:paddingLeft="10dp"
+               android:background="@drawable/custom_loai"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="10dp"
+               android:text="Loại Danh Mục"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+       </LinearLayout>
+       <View
+           android:layout_margin="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="#D3C8C8"/>
+       <LinearLayout
+           android:visibility="gone"
+           android:id="@+id/TextViewThongBaoLoai"
+           android:paddingTop="60dp"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <ImageView
+               android:layout_gravity="center_horizontal"
+               android:src="@drawable/find"
+               android:layout_width="100dp"
+               android:layout_height="100dp"/>
+           <TextView
+               android:textSize="22sp"
+               android:gravity="center"
+               android:text="Không tìm thấy kết quả"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_marginTop="10dp"
+               android:id="@+id/RecyclerviewSanPhamTheoLoai"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"/>
+       </LinearLayout>
+   </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ImageViewAddDC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center_vertical"
+            android:background="#68D6D2D2"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:text="CHỌN TỈNH, THÀNH PHỐ"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <LinearLayout
+            android:id="@+id/donglayoutTT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/TinhThanh"
+                android:drawableRight="@drawable/ic_rroww24dp"
+                android:padding="10dp"
+                android:text="chọn tỉnh, thành phố"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:background="#68D6D2D2"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:text="CHỌN QUẬN, HUYỆN"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/QuanHuyen"
+            android:drawableRight="@drawable/ic_rroww24dp"
+            android:padding="10dp"
+            android:text="chọn quận, huyện"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+        <TextView
+            android:gravity="center_vertical"
+            android:background="#68D6D2D2"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:text="CHỌN PHƯỜNG, XÃ, THỊ TRẤN"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/PhuongXa"
+            android:drawableRight="@drawable/ic_rroww24dp"
+            android:padding="10dp"
+            android:text="chọn phường, xã, thị trấn"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:visibility="gone"
+                android:textColor="#fff"
+                android:background="#2196F3"
+                android:id="@+id/buttonXacNhanDC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:text="Tiếp theo" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

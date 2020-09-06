@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hqtrung.hqt.cuoi_ky">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.Send_Chat_Activity"></activity>
+        <activity android:name=".Activity.Chat_Activity" />
+        <activity android:name=".Activity.AboutUs_Activity" />
+        <activity android:name=".Activity.ThayDoiMatKhauActivity" />
+        <activity android:name=".Activity.CaiDatTaiKhoanActivity" />
+        <activity android:name=".Activity.ThongTinKhachHangActivity" />
+        <activity android:name=".Activity.TImKiemTheoGiaActivity" />
+        <activity android:name=".Activity.TimkiemTheoLoaiDanhMucActivity" />
+        <activity android:name=".Activity.TimKiemTheoDanhMucActivity" />
+        <activity android:name=".Activity.ActivityHienThiTimKiem" />
+        <activity android:name=".Activity.Activity_Search" />
+        <activity android:name=".Activity.UpdateLoaiDanhMuc" />
+        <activity android:name=".Activity.UpdateDanhMuc" />
+        <activity android:name=".Activity.ActivitySuaSanPham" />
+        <activity android:name=".Activity.SanPhamTheoLoaiActivity" />
+        <activity android:name=".Activity.ChiTietSanPhamActivity" />
+        <activity android:name=".Activity.PhuongXaActivity" />
+        <activity android:name=".Activity.QuanHuyenActivity" />
+        <activity android:name=".Activity.TinhThanhActivity" />
+        <activity android:name=".Activity.AddActivity" />
+        <activity android:name=".Activity.AuthActivity" />
+        <activity android:name=".Activity.OnBoardActivity" />
+        <activity android:name=".Activity.Activity_SanPham" />
+        <activity android:name=".Activity.start_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MainActivity" />
+    </application>
+
+</manifest>

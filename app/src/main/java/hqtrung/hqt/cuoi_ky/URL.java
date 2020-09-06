@@ -1,0 +1,52 @@
+package hqtrung.hqt.cuoi_ky;
+
+public  class URL {
+    public static String url = "192.168.1.182:8888";
+    public static String urlSanPham = "http://"+url+"/android/android_test/public/api/loai_danhmuc";
+    public static String urlDanhMuc = "http://"+url+"/android/android_test/public/api/show_data";
+    public static String urlAddDanhMuc = "http://"+url+"/android/android_test/public/api/show_data";
+    public static String urlDangKy = "http://"+url+"/android/android_test/public/api/dang_ky";
+    public static String urlDangNhap = "http://"+url+"/android/android_test/public/api/dang_nhap";
+    public static String ApiTinhThanh = "http://"+url+"/android/android_test/public/api/api_tinh_thanh";
+    public static String ApiQuanHuyen = "http://"+url+"/android/android_test/public/api/api_quan_huyen";
+    public static String ApiPhuongXa = "http://"+url+"/android/android_test/public/api/api_phuong_xa";
+    public static String urlUploadSanPham  = "http://"+url+"/android/android_test/public/api/upload_sampham";
+    public  static String urlShowSanPham = "http://"+url+"/android/android_test/public/api/san_pham";
+    public static String urlAnh = "http://"+url+"/android/android_test/public/";
+    public static String urlChiTietSanPham = "http://"+url+"/android/android_test/public/api/chitiet_sanpham";
+    public static String urlSPTheoDiaChi = "http://"+url+"/android/android_test/public/api/san_pham_theo_dia_chi";
+    public static String urlSPTheoLoai = "http://"+url+"/android/android_test/public/api/sanpham_theo_loai";
+    public static String urlSPLoai = "http://"+url+"/android/android_test/public/api/loai_sanpham_theodc";
+    public static String upload = "http://"+url+"/android/android_test/public/api/upload_anh_user";
+    public static String urlQLT = "http://"+url+"/android/android_test/public/api/quan_ly_tin";
+    public  static String urlQLTD = "http://"+url+"/android/android_test/public/api/quan_ly_tin_duyet";
+    public static String urlXoaSP = "http://"+url+"/android/android_test/public/api/xoa_tin";
+    public static String urlgetsanpham ="http://"+url+"/android/android_test/public/api/get_san_pham";
+    public static String urlUpdateSanPham = "http://"+url+"/android/android_test/public/api/update_san_pham";
+    public static String urlTimKiem = "http://"+url+"/android/android_test/public/api/tim_kiem";
+    public static String urlLichsu = "http://"+url+"/android/android_test/public/api/lich_su";
+    public static String urlXoaLichSu = "http://"+url+"/android/android_test/public/api/xoa_lich_su";
+    public static String urlDanhSachTimKiem = "http://"+url+"/android/android_test/public/api/ht_danh_sach_tim_kiem";
+    public static String urlTheoDanhMuc = "http://"+url+"/android/android_test/public/api/tk_theo_dm";
+    public static String urlTatCaLoaiDanhMuc = "http://"+url+"/android/android_test/public/api/tk_theo_all_ldm";
+    public static String urlNoiDungTheoGia = "http://"+url+"/android/android_test/public/api/tk_nd_theo_gia";
+    public static String urlDanhMucTheoGia = "http://"+url+"/android/android_test/public/api/tk_gia_theo_dm";
+    public static String urlLoaiDanhMucTheoGia = "http://"+url+"/android/android_test/public/api/tk_gia_theo_ldm";
+    public static String urlTheoDiaChi = "http://"+url+"/android/android_test/public/api/tk_theo_dc";
+    public static String urlTheoDiaChiDanhMuc = "http://"+url+"/android/android_test/public/api/theo_dc_dm";
+    public static String urlTheoDiaChiLoaiDanhMuc = "http://"+url+"/android/android_test/public/api/theo_dc_ldm";
+    public static String urlTheoDiaChiLoaiDanhMucGia = "http://"+url+"/android/android_test/public/api/theo_dc_ldm_gia";
+    public static String urlTheoDiaChiGia = "http://"+url+"/android/android_test/public/api/theo_dc_gia";
+    public static String urlTheoDiaChiDanhMucGia = "http://"+url+"/android/android_test/public/api/theo_dc_dm_gia";
+    public static String urlUser = "http://"+url+"/android/android_test/public/api/trang_user";
+    public static String urlSanPhamBan = "http://"+url+"/android/android_test/public/api/san_pham_ban";
+    public static String urlUserCaiDat = "http://"+url+"/android/android_test/public/api/user";
+    public static String urlEmail = "http://"+url+"/android/android_test/public/api/update_email";
+    public static String urlMatKhau = "http://"+url+"/android/android_test/public/api/update_mat_khau";
+    public static String urlGioiTinh = "http://"+url+"/android/android_test/public/api/update_gioi_tinh";
+    public static String urlNgaySinh = "http://"+url+"/android/android_test/public/api/update_date";
+    public static String urlCaiDatDiaChi = "http://"+url+"/android/android_test/public/api/update_dia_chi";
+    public static String urlTinCho =  "http://"+url+"/android/android_test/public/api/quan_ly_tin_tu_choi";
+    public static String urlGetNameUser =  "http://"+url+"/android/android_test/public/api/get_name_user";
+
+}

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "628410139179",
+    "firebase_url": "https://cuoiky-chat.firebaseio.com",
+    "project_id": "cuoiky-chat",
+    "storage_bucket": "cuoiky-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628410139179:android:b9faae6b91dce69b28e06e",
+        "android_client_info": {
+          "package_name": "hqtrung.hqt.cuoi_ky"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628410139179-kj064do4tuhcfn7vpklbd3r5dhmbf8uq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKzoQJEZ7olIVODpe7LETnyeQsltxLc_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628410139179-kj064do4tuhcfn7vpklbd3r5dhmbf8uq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

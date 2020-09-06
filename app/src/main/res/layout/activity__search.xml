@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Activity_Search">
+
+    <LinearLayout
+        android:background="#F5F5F5"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#2196F3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="13dp"
+                android:weightSum="10">
+
+                <ImageButton
+                    android:id="@+id/TimKiemBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_navigate_before_black_24dp"
+                    android:scaleType="fitXY" />
+
+                <EditText
+                    android:id="@+id/EditTextTimKiem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="9"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:background="@drawable/custom_search"
+                    android:drawableLeft="@drawable/ic_search_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:hint="Nhập nội dung tìm kiếm"
+                    android:paddingStart="8dp"
+                    android:paddingRight="10dp"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/layoutlichsu"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                    android:textAllCaps="true"
+                    android:textSize="16dp"
+                    android:text="Tìm kiếm gần đây"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/xoaLichSu"
+                    android:textColor="#03A9F4"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="17dp"
+                    android:text="Xóa"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerviewLichSuTimKiem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
